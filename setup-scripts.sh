@@ -20,7 +20,6 @@ SHELL_CONFIG_FILE="$HOME/.zshrc"
 if [ -n "$SHELL_CONFIG_FILE" ] && ! grep -qF "export PATH=\"\$PATH:\$HOME/scripts\"" "$SHELL_CONFIG_FILE"; then
     echo "\n# Add helper scripts to PATH\n" >> "$SHELL_CONFIG_FILE"
     echo "export PATH=\"\$PATH:\$HOME/scripts\"" >> "$SHELL_CONFIG_FILE"
-    source "$SHELL_CONFIG_FILE"  # Update current shell with new PATH
     echo "Helper scripts added to PATH"
 else
     echo "Scripts path already added in zshrc"
