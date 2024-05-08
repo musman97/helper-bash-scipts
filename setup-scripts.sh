@@ -20,7 +20,6 @@ if [ -n "$BASH_VERSION" ]; then
     SHELL_CONFIG_FILE="$HOME/.bashrc"
 elif [ -n "$ZSH_VERSION" ]; then
     SHELL_CONFIG_FILE="$HOME/.zshrc"
-fi
 else
     # Use a default value if the shell is not recognized
     SHELL_CONFIG_FILE="$HOME/.profile"
