@@ -8,7 +8,7 @@ DOWNLOAD_DIR=$(mktemp -d)
 
 INSTALL_DIR="$HOME/scripts"
 
-git clone https://github.com/musman97/helper-bash-scipts.git "$DOWNLOAD_DIR"
+git clone --depth=1 https://github.com/musman97/helper-bash-scipts.git "$DOWNLOAD_DIR"
 
 cp -R $DOWNLOAD_DIR/scripts $HOME/
 
